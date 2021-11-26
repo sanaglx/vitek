@@ -53,6 +53,18 @@ $(function($){
         return false;
     })
 
+    $('.menu2').click(function(){
+        var b = $(this)
+        var a = $(this).parent();
+        var c = a.find('.prod-menu-ul-mobi')
+        if(!c.hasClass("active")){
+             c.addClass('active');
+        }else{
+            c.removeClass('active');
+        }
+        return false;
+    })
+
 }) 
 
 /**select */

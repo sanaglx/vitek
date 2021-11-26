@@ -674,6 +674,59 @@ label {
   position: static;
 }
 
+.prod-head-mobi .menu2 {
+  border-top: 1px solid #F0E1CE;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.prod-head-mobi .menu2 span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.prod-head-mobi .prod-menu-ul-mobi {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+
+.prod-head-mobi .prod-menu-ul-mobi.active {
+  max-height: 700px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.prod-head-mobi .prod-menu-ul-mobi a {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.prod-head-mobi .prod-menu-ul-mobi a:hover {
+  color: #E95235;
+}
+
 @media (max-width: 992px) {
   .menu .submenu1.active {
     /*  background: #fff;*/
@@ -745,7 +798,7 @@ label {
     padding: 0 15px 0 0;
   }
   .prod-head {
-    padding: 8px 15px 30px 15px !important;
+    padding: 8px 15px 0px 15px !important;
   }
   .left {
     padding: 0;
