@@ -167,29 +167,6 @@ footer{
             }
         }
      }
-     .submenu{
-        top: 0;
-        position: absolute;
-        left: 229px;
-        z-index: 2;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        width: 100%;
-        top: -72px;
-        
-        a{
-            color: #373737;
-            padding: 21px 40px 21px 40px;
-            border: 1px solid #ccc;
-           background:rgba(240, 255, 206, 0.4);
-           transition: 0.3s all;
-           &:hover{
-            color:#fff;   
-            background:rgba(233, 82, 53, 0.7);
-           }
-        }
-    }
  }
 
  
