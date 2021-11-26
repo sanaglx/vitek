@@ -1,0 +1,221 @@
+.left{
+    width: 256px;
+    /*min-height: calc(100vh - 75px);*/
+    height: auto;
+    background: #E95235;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 33px 0 0 0px;
+}
+.logo{
+    display: block;
+    padding-left: 48px;
+    margin-bottom: 23px;
+}
+
+.politika{
+    padding: 0 40px 0 0px;
+    font-weight: 600;
+    font-size: 12px;
+    color:#fff;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+footer{
+    background: #E95235;
+    width: 100wh;
+    line-height: 40px;
+    padding-left: 256px;
+    display: flex;
+    position: relative;
+   /* bottom: 40px;*/
+}
+.footer-c{
+    color:#fff;
+    padding: 0 0 0 40px;
+    font-weight: 600;
+     font-size: 12px;
+     flex:1;
+}
+
+.lic-kab{
+     background:  #E95235;
+     color:#fff;
+     display: flex;
+     align-items: center;
+     line-height: 64px;
+     position: relative;
+     padding: 0px 0 0 77px;
+     margin-left: 0px;
+     &::before{
+         content: "";
+         background: url(../img/ico/ico30.svg) no-repeat;
+         position: absolute;
+         top: 17px;left: 27px;
+         width: 30px;
+         height: 30px;
+
+     }
+     i{  
+         padding:0 22px 0 28px;
+         font-size: 0;
+         display: flex;
+     }
+
+ }
+ .click-a{
+     background: #4B284D;
+ }
+ .lic-kab.active{
+    background:  #F0E1CE;;
+     color: #E95235;
+     &::before{
+        background: url(../img/ico/ico30-1.svg) no-repeat;
+        top: 17px;left: 27px;
+        width: 30px;
+        height: 30px;
+    }
+    
+ }
+ .mini-cart{
+     position: absolute;
+     width: 32px;height: 32px;
+     background: #E95235;
+     border-radius: 8px;
+     right: 16px;
+     top: 16px;
+     box-shadow: 0 0 15px 14px #f0e1ce;
+     a{
+        width: 32px;
+        height: 32px;
+        display: block;
+        transition: all 0.3s; 
+        &:hover{
+            opacity: 0.6;
+            transform: scale(1.2);
+        }
+     }
+    img{
+        position: absolute;
+        left: 7px;
+        top: 7px;
+    }
+    .sht{
+        position: absolute;
+        color: #fff;
+        font-size: 10px;
+        top: -10px;
+        right: -9px;
+        padding: 5px;
+        background: #000;
+        line-height: 1;
+        border-radius: 50%;
+        min-width: 11px;
+        display: flex;
+        justify-content: center;
+    }
+ }
+ 
+
+
+ .menu{
+     list-style: none;
+     padding: 3px 0 0 28px;
+     position: relative;
+      z-index: 5;
+     &>li{
+         position: relative;
+        a{
+            position: relative;
+            line-height: 19px;
+            color: #FFFFFF;
+            display: block;
+            text-decoration: none;
+            padding: 21px 0 21px 50px;
+            transition: 0.3s all;
+            &:hover,
+            &.active{
+                color:#4B284D;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                //background: url(../img/ico/ico1.svg) no-repeat;
+                top: 16px;left: 0px;
+                width: 30px;
+                height: 30px;
+                transition: 0.3s all;
+        
+            }
+            &.active::after{
+                content: "";
+                position: absolute;
+                background: url(../img/ico/ugol.png) no-repeat;
+                top: 16px;
+                right: 0px;
+                width: 11px;
+                height: 23px;
+            }
+        }
+     }
+     .submenu{
+        top: 0;
+        position: absolute;
+        left: 229px;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        top: -72px;
+        
+        a{
+            color: #373737;
+            padding: 21px 40px 21px 40px;
+            border: 1px solid #ccc;
+           background:rgba(240, 255, 206, 0.4);
+           transition: 0.3s all;
+           &:hover{
+            color:#fff;   
+            background:rgba(233, 82, 53, 0.7);
+           }
+        }
+    }
+ }
+
+ 
+
+
+
+ a.ico1::before{background: url(../img/ico/ico1.svg) no-repeat;}
+ a.ico2::before{background: url(../img/ico/ico2.svg) no-repeat;}
+ a.ico3::before{background: url(../img/ico/ico3.svg) no-repeat;}
+ a.ico4::before{background: url(../img/ico/ico5.svg) no-repeat;}
+ a.ico5::before{background: url(../img/ico/ico4.svg) no-repeat;}
+ a.ico6::before{background: url(../img/ico/ico8.svg) no-repeat;}
+ a.ico7::before{background: url(../img/ico/ico9.svg) no-repeat;}
+ a.ico8::before{background: url(../img/ico/ico7.svg) no-repeat;}
+ a.ico9::before{background: url(../img/ico/ico6.svg) no-repeat;}
+
+ 
+
+ a:hover.ico1::before,a.active.ico1::before{background: url(../img/ico/ico1-1.svg) no-repeat;}
+ a:hover.ico2::before,a.active.ico2::before{background: url(../img/ico/ico2-1.svg) no-repeat;}
+ a:hover.ico3::before,a.active.ico3::before{background: url(../img/ico/ico3-1.svg) no-repeat;}
+ a:hover.ico4::before,a.active.ico4::before{background: url(../img/ico/ico5-1.svg) no-repeat;}
+ a:hover.ico5::before,a.active.ico5::before{background: url(../img/ico/ico4-1.svg) no-repeat;}
+ a:hover.ico6::before,a.active.ico6::before{background: url(../img/ico/ico8-1.svg) no-repeat;}
+ a:hover.ico7::before,a.active.ico7::before{background: url(../img/ico/ico9-1.svg) no-repeat;}
+ a:hover.ico8::before,a.active.ico8::before{background: url(../img/ico/ico7-1.svg) no-repeat;}
+ a:hover.ico9::before,a.active.ico9::before{background: url(../img/ico/ico6-1.svg) no-repeat;}
+
+ /********* */

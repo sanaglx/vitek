@@ -1,0 +1,215 @@
+.shared {
+    display: flex;
+    padding: 0 30px 45px 30px;
+}
+.shared-left {
+    min-width: calc(408px - 60px);
+    flex: 1;
+}
+.shared-center {
+    flex: 1 100%;
+    padding: 0 30px;
+}
+.shared-right {
+    width: auto;
+}
+.page {
+    font-size: 18px;
+    line-height: 26px;
+    p {
+        margin: 0 0 30px 0;
+    }
+    ul {
+        padding-left: 20px;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+    ul.page-ul {
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #e95235;
+        li {
+            span {
+                color: #4b284d;
+            }
+        }
+    }
+    img {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+}
+.geo-prod {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100%);
+    .img-map {
+        img {
+            width: 100%;
+        }
+
+        /* flex:1 50%;*/
+    }
+    .page-contacts {
+        h3 {
+            color: #e95235;
+            margin-bottom: 20px;
+        }
+        .two-contacts {
+            display: flex;
+            flex-wrap: wrap;
+            .contact {
+                flex: 1;
+                min-width: 276px;
+                margin-bottom: 30px;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                color: #000000;
+                &:hover {
+                    color: #e95235;
+                }
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                line-height: 23px;
+                color: #000000;
+            }
+        }
+    }
+}
+.shared-left {
+    border-right: 1px solid #f0e1ce;
+    padding-right: 30px;
+    h1 {
+        margin-top: 45px;
+        text-transform: initial;
+    }
+    .menu-page {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 16px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            color: #4b284d;
+            &:hover,
+            &.active {
+                color: #e95235;
+            }
+        }
+    }
+}
+.shared-center {
+    h2 {
+        margin-top: 50px;
+    }
+}
+.shared-right {
+    .fotm-right {
+        margin-top: 40px;
+    }
+}
+.vacancy {
+    display: flex;
+    background: #fbf8f3;
+    border-radius: 8px;
+    padding: 23px 30px;
+    margin-bottom: 25px;
+
+    &-left {
+        flex: 1;
+        a {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 33px;
+            margin-right: 30px;
+            color: #4b284d;
+            &:hover {
+                color: #e95235;
+            }
+        }
+    }
+    &-right {
+        text-align: right;
+        &_price {
+            font-size: 16px;
+            line-height: 23px;
+            color: #e95235;
+            margin-bottom: 15px;
+        }
+        &_text {
+            font-size: 12px;
+            line-height: 17px;
+            text-align: right;
+            max-width: 235px;
+        }
+    }
+}
+
+.job {
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #e95235;
+    }
+    &__text {
+        max-width: 305px;
+        font-size: 16px;
+    }
+}
+.big {
+    font-size: 18px;
+}
+.medium {
+    font-size: 16px;
+    line-height: 23px;
+    li {
+        margin-bottom: 15px;
+    }
+}
+
+.tabs {
+    &__caption {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4b284d;
+        margin-bottom: 40px;
+        cursor: pointer;
+        li {
+            margin-right: 45px;
+        }
+        li.active {
+            border-bottom: 1px solid #e95235;
+        }
+    }
+    &__content{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+
+
