@@ -78,6 +78,7 @@ i{font-style: normal;}
     position: relative;
      width: 100%;
      flex:1;
+    min-height: calc(100vh - 40px);
     // background: #ccc;
     &.right-bkg::after{
             content: "";
@@ -186,7 +187,4 @@ i{font-style: normal;}
 
 @import "product";
 @import "users";
-
-
-
 @import "media";

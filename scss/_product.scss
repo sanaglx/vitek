@@ -120,14 +120,14 @@
             color: #4B284D;
             height: 72px;
         }
-		&_ves {}
+	
 }
 
 .prod-elem_ves {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-		&__ico {}
+		
 		&__text {
             font-weight: 600;
             font-size: 12px;
@@ -216,7 +216,7 @@
     display: flex;
     align-items: center;
     
-		&__img {}
+		
 
 		&__text {
             font-weight: 600;
@@ -317,9 +317,6 @@
         background: #F0E1CE;
         border-radius: 8px;  
         margin: 0 15px ;
-    }
-    &__cart{
-
     }
 }
 

@@ -1,5 +1,7 @@
-@media(max-width:1199px){}
-@media(max-width:991px){
+@media(max-width:1200px){}
+
+@media(max-width:992px){
+
 .img-block1 {height: 500px;}  
 .img-block2 {flex-wrap: wrap;}
 .img-block2_1{height: 500px;width: 100%; flex:1 100%}
@@ -8,8 +10,15 @@
 .img-block3_2{height: 500px;width: 100%; flex:1 100%}
 
 }
-@media(max-width:767px){
+
+@media(max-width:768px){
 
 }
-@media(max-width:567px){}
+
+@media(max-width:568px){
+    .right.right-bkg::after {
+        content: "";background: none;
+    }
+}
+
 @media(max-width:383px){}

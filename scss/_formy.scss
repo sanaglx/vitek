@@ -110,11 +110,11 @@ label{display: block;}
             border: 1px solid rgba(240, 225, 206, 0.4);
             min-width: 190px;
             &:focus{
-                background-color: #fff !important;
+               // background-color: #fff;
             }
         }
         input:valid, textarea:valid,select {
-            background-color: #fff !important;
+            /*background-color: #fff;*/
         }
     }
 }
