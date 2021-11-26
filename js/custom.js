@@ -58,8 +58,10 @@ $(function($){
         var a = $(this).parent();
         var c = a.find('.prod-menu-ul-mobi')
         if(!c.hasClass("active")){
+             b.addClass('active');
              c.addClass('active');
         }else{
+            b.removeClass('active');
             c.removeClass('active');
         }
         return false;
