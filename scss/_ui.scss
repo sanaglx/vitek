@@ -4,6 +4,10 @@
     }
 }
 
+.prod-nenu-ul img{
+    width: 170px;
+}
+
 
 @media(max-width:992px){
     .menu .submenu1.active {
@@ -117,6 +121,8 @@
             }
             overflow: hidden;
             a{
+                display: flex;
+                align-items: center;
                 padding: 10px 0;
                 font-weight: 600;
                 font-size: 14px;
@@ -127,6 +133,10 @@
                     color:#E95235;
                 }
             };
+            img{
+                width: 54px;
+            }
+            i{padding-left: 30px;}
         }
     }
     footer{padding-left: 0px;text-align: center;}

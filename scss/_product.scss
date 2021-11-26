@@ -76,7 +76,7 @@
         padding: 26px 0 26px 30px;
         &:hover,
         &.active{
-            background: #E95235;color:#fff;opacity: 1;
+            background: rgba(75, 40, 77, 0.2);color:#373737;opacity: 0.9;
         }
 
     }
@@ -360,6 +360,8 @@ ul.product-propities {
     .product-right{
         margin-bottom: 60px;
     }
+    .brend-elem {max-width: 100%;}
+    .b-e__title {width: 100%;}
 }
 @media(max-width:767px){
     .wrap-page {padding: 30px 15px 20px 15px;}
