@@ -196,30 +196,30 @@ $(function ($) {
 			0 : {
 				center:true,
 				stagePadding:0,
-				items: 3,
+				items: 2,
                loop:true,
 
 			},
 			370 : {
 				center:true,
 				stagePadding:0,
-				items: 3,
+				items: 2,
                 loop:true,
 			},
 			480 : {
 			//	center:true,
 				stagePadding:100,
-				items: 3,
+				items: 2,
 			},
 			570 : {
 			//	center:true,
 				stagePadding:0,
-				items:3,
+				items:2,
 			},
 			670 : {
 			//	center:true,
 			//stagePadding:60,
-				items: 3
+				items: 2
 			},
 			992 : {
 				items: 3,

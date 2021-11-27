@@ -100,6 +100,7 @@ label{display: block;}
         font-size: 12px;line-height: 17px;
         flex:1;
         margin-bottom: 15px;
+        margin-right: 15px;
         input,textarea{
             width: 100%;
             padding: 15px 18px;
@@ -108,10 +109,13 @@ label{display: block;}
             outline: none;
             border:none;
             border: 1px solid rgba(240, 225, 206, 0.4);
-            min-width: 190px;
+            min-width: 228px;
             &:focus{
                 background-color: #fff;
             }
+        }
+        .err{
+            border:1px solid #f00;
         }
         input:valid, textarea:valid,select {
             /*background-color: #fff;*/
@@ -134,13 +138,19 @@ label{display: block;}
         background: #DFCFBB;
     }
 }
+.h3a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 15px 0;
+}
 
 
 /******select************ */
     .select {
         display: block;
         //max-width: 215px;
-        width: 50%;
+        //width: 50%;
         position: relative;
     }
 
@@ -153,6 +163,13 @@ label{display: block;}
         background: rgba(240, 225, 206, 0.4);
         border-radius: 8px;
         min-width: 190px;
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     background: url(../img/ico/galka.svg) no-repeat;
+        //     width: 30px;height: 30px;
+
+        // }
 
     }
 
@@ -187,12 +204,12 @@ label{display: block;}
     .new-select:after {
         content: '';
         display: block;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         position: absolute;
-        right: 9px;
-        top: 9px;
-        background: url('path-to-image') no-repeat right center / cover;
+        right: 14px;
+        top: 12px;
+        background: url('../img/ico/galka.svg') no-repeat right center ;
         opacity: 0.6;
 
         -webkit-transition: all .27s ease-in-out;
@@ -212,6 +229,69 @@ label{display: block;}
                 transform: rotate(180deg);
     }
 /***/
+
+/**checkbox**/
+.chk_ii{margin-bottom: 16px;font-size: 16px;}
+.chk_ii input[type='checkbox'] {
+    display: none;
+  }
+  
+  .chk_ii input[type='checkbox'] + label {
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .chk_ii input[type='checkbox']:checked + label::before {
+    background: url(../img/ico/galka.svg) 2px no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 13px;
+    background-size: 76%;
+    /* -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 190, 241, 0.787553), 0px 3px 13px 0px rgba(0, 190, 241, 0.787553); */
+    /* box-shadow: inset 0px -2px 0px 0px rgba(0, 190, 241, 0.787553), 0px 3px 13px 0px rgba(0, 190, 241, 0.787553); */
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .chk_ii input[type='checkbox'] + label::before {
+    content: '';
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 12px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E95235;
+
+    -webkit-transition: .3s;
+    transition: .3s;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background: white;
+  }
+  
+  .chk_ii input[type='checkbox'] + label::after {
+    font-style: normal;
+  }
+  
+  .chk_ii label i {
+    font-style: normal;
+    color: #FF0068;
+    font-weight: 600;
+  }
+  
+  .chk_ii p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #4F4F4F;
+  }
+/***/
+
 @media(max-width:575px){
     .registracia {width: 100%;}
     .form-reg-group {flex-direction: column;}
