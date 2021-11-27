@@ -177,3 +177,53 @@ $(function($){
       return false 
     })
 })
+
+/**карусели */ 
+$(function ($) {
+	$(".menu-page-mobi").owlCarousel({
+		//center:true,
+		stagePadding:80,
+		//loop:true,
+		items: 3,
+        autoWidth:true,
+		//autoplay: false,
+		dots: false,
+		nav: false,
+        margin:15,
+		navText: ["<i class='news-str-left' aria-hidden='true'><img src='img/ico/left.svg'></i>", 
+				"<i class='news-str-right' aria-hidden='true'><img src='img/ico/right.svg'></i>"],
+		responsive : {
+			0 : {
+				center:true,
+				stagePadding:0,
+				items: 3,
+               loop:true,
+
+			},
+			370 : {
+				center:true,
+				stagePadding:0,
+				items: 3,
+                loop:true,
+			},
+			480 : {
+			//	center:true,
+				stagePadding:100,
+				items: 3,
+			},
+			570 : {
+			//	center:true,
+				stagePadding:0,
+				items:3,
+			},
+			670 : {
+			//	center:true,
+			//stagePadding:60,
+				items: 3
+			},
+			992 : {
+				items: 3,
+			},
+		}
+	});
+  })

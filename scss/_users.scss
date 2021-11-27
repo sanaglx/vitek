@@ -1,17 +1,20 @@
 .shared {
     display: flex;
     padding: 0 30px 45px 30px;
+    flex-wrap: wrap;
 }
 .shared-left {
     min-width: calc(408px - 60px);
+    max-width: 350px;
     flex: 1;
 }
 .shared-center {
-    flex: 1 100%;
+    flex: 1 ;
     padding: 0 30px;
 }
 .shared-right {
     width: auto;
+
 }
 .page {
     font-size: 18px;
@@ -39,6 +42,9 @@
     img {
         margin-bottom: 30px;
         display: inline-block;
+        max-width: 650px;
+        width: 100%;height: 100%;
+        object-fit:scale-down ;
     }
 }
 .geo-prod {
@@ -94,10 +100,8 @@
         text-transform: initial;
     }
     .menu-page {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        li {
+        padding: 0;margin: 0;list-style: none;
+        .li {
             margin-bottom: 16px;
         }
         a {
@@ -111,6 +115,9 @@
                 color: #e95235;
             }
         }
+    }
+    .menu-page-modi{
+        display: none;
     }
 }
 .shared-center {
@@ -211,5 +218,56 @@
         }
     }
 }
+
+.shared-left .menu-page-mobi{
+    display: none;
+}
+@media(max-width:1400px){
+    .shared-left h1 {margin: 27px 0 17px;}
+    .shared{padding: 0 0px 45px 0px;}
+    .shared-left{
+        padding: 0 15px 0px 15px;
+        flex:0 100%;
+        max-width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #f0e1ce;
+        .menu-page{
+            display: none;
+        }
+        .menu-page-mobi{
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            a{
+                white-space: nowrap;
+                padding: 0 0 9px 0;position: relative;top: 1px;
+                border-bottom: 1px solid transparent;
+                color:#4b284d;
+                &:hover{
+                    border-bottom: 1px solid #E95235; 
+                }
+                &.active{
+                    color:#E95235;
+                    border-bottom: 1px solid #E95235;
+                }
+            }
+        }
+        .owl-stage-outer{overflow: visible;}
+    }
+    .shared-center {
+        flex: 1;padding: 0 30px 0 15px;
+        h2{    margin-top: 30px;}
+    }
+    .shared-right { padding-right: 15px;margin: 0 auto;}
+}
+
+@media(max-width:768px){
+    .shared-left h1 {margin: 14px 0 0px;font-size: 28px;}
+    .shared-center {flex: 1;padding: 0 15px 0 15px;min-width: 290px;}
+    .shared-right { padding-right:0;}
+    .fotm-right{width: 296px;}
+}
+
 
 
