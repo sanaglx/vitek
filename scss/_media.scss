@@ -3,6 +3,16 @@
         min-width: 286px;
         margin-right: 20px;
     }
+    .feedback-block{flex-direction: column;}
+    .fotm-right-ver2 {margin-bottom: 30px;}
+    .feedback-block .feedback-notation_text {max-width: inherit;}
+
+    .form-reg-group {flex-wrap: wrap;}
+
+}
+
+@media(max-width:1024px){
+    .sertificatall {justify-content: center;}
 }
 
 @media(max-width:992px){
@@ -72,9 +82,11 @@
 }
 
 @media(max-width:768px){
-    .lk-block-all{
-        padding: 25px 15px; 
-    }
+    .lk-block-all{padding: 25px 15px; }
+    .feedback-block .fotm-right{width: inherit;margin-right: inherit;}
+    .form-reg-group .form-reg-item{margin-right: inherit;}
+    .feedback {margin: 15px 15px  ;}
+    .miw240 {min-width: 220px;}
 }
 
 @media(max-width:568px){
