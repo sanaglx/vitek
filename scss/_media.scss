@@ -82,17 +82,28 @@
 }
 
 @media(max-width:768px){
+    h1{font-size: 30px;}
+    h2{font-size: 26px;    line-height: 1.4;}
     .lk-block-all{padding: 25px 15px; }
     .feedback-block .fotm-right{width: inherit;margin-right: inherit;}
     .form-reg-group .form-reg-item{margin-right: inherit;}
     .feedback {margin: 15px 15px  ;}
     .miw240 {min-width: 220px;}
+    .form-m1 {
+        max-width: 296px;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media(max-width:568px){
     .right.right-bkg::after {
         content: "";background: none;
     }
+    h1{font-size: 26px;}
+    h2{font-size: 24px;    line-height: 1.2;}
 }
 
 @media(max-width:383px){}

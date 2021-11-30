@@ -59,6 +59,7 @@ footer{
      position: relative;
      padding: 0px 0 0 77px;
      margin-left: 0px;
+     cursor: pointer;
      &::before{
          content: "";
          background: url(../img/ico/ico30.svg) no-repeat;
@@ -89,6 +90,12 @@ footer{
     }
     
  }
+ .lic-kab__ico{
+     &:hover{
+       color: #4b284d;
+     }
+ }
+
  .mini-cart{
      position: absolute;
      width: 32px;height: 32px;
@@ -97,6 +104,7 @@ footer{
      right: 16px;
      top: 16px;
      box-shadow: 0 0 15px 14px #f0e1ce;
+     z-index: 20;
      a{
         width: 32px;
         height: 32px;

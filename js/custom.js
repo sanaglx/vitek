@@ -150,6 +150,41 @@ jQuery(document).ready(function(){
 		}
 		
 	});
+
+    $('.lic-kab__ico').click(function(){
+        var us = $(this)
+        if(!us.hasClass('mod')){
+            us.addClass('mod')
+            $('.teni').addClass('active')
+            $('.modal1').addClass('active')
+        }else{
+            us.removeClass('mod')
+            $('.teni').removeClass('active')
+            $('.modal1').removeClass('active')
+        }
+    })
+    $('.autorize').click(function(){
+        var us = $(this)
+        if(!us.hasClass('mod')){
+            us.addClass('mod')
+            $('.teni').addClass('active')
+            $('.modal1').addClass('active')
+        }else{
+            us.removeClass('mod')
+            $('.teni').removeClass('active')
+            $('.modal1').removeClass('active')
+        }
+        return false
+    })
+
+    $('.close').click(function (){
+        $('.teni').removeClass('active')
+        $('.modal1').removeClass('active')
+        $('.lic-kab__ico').removeClass('mod')
+        $('.autorize').removeClass('mod')
+        return false
+    })
+
 }); 
 /*****menu*** */
 $(function($){
