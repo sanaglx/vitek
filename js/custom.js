@@ -189,7 +189,6 @@ jQuery(document).ready(function(){
 /*****menu*** */
 $(function($){
     $('.ico-menu').click(function (){
-
         var a = $(this).parent();
         var s = a.find('.submenu1')
         if(!a.find(".ico-menu").hasClass('active')){
@@ -209,7 +208,7 @@ $(function($){
             $(".prod-content").removeClass('active')
             $(".shared-center").removeClass('active')
         }
-      return false 
+      return true 
     })
 })
 
