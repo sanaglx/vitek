@@ -261,3 +261,23 @@ $(function ($) {
 		}
 	});
   })
+
+
+  var ratio = 1/2.5; // высота равна половине ширины
+  if($(window).width()<992){var ratio = 1/1.5;}
+  if($(window).width()>992){var ratio = 1/2.5;}
+  if($(window).width()>1300){var ratio = 1/3.2;}
+  var $box = $('.bl-2'); // кэшируем результат вызова функции
+  var $box1=$('.bmb-img5'); 
+
+    $box.height($box.width() * ratio);
+    $box1.height($box.width()/2 * ratio);
+
+ $(window).resize(function () {
+     if($(window).width()>992){var ratio = 1/2.5;}
+     if($(window).width()>1300){var ratio = 1/3;}
+      if($(window).width()<992){var ratio = 1/1.5;}
+      $box.height($box.width() * ratio);
+      $box1.height($box.width()/2 * ratio);
+ }) 
+

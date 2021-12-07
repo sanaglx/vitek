@@ -159,13 +159,15 @@ i {font-style: normal;}
     }
 }
 
+.bmb-img5{}
+
 .img-block1 {
-    height: 600px;
     width: 100%;
     background: url(../img/gl1.jpg);
 }
 .img-block2 {
     display: flex;
+    flex-wrap: wrap;
 }
 .img-block-center {
     display: flex;
@@ -177,100 +179,127 @@ i {font-style: normal;}
     width: 100%;
 }
 .img-block2_1 {
-    height: 566px;
+    max-height: initial;
     width: 100%;
     background: url(../img/gl2.jpg) left top;
     flex: 1 50%;
     background-size: 1000px;
     transition: all 0.3s;
     img {
-        transform: scale(0.7);
+        transform: scale(0.6);
         transition: all 0.3s;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     &:hover {
-        background-size: 835px;
+        background-size: 150%;
         background-position: left top;
         img {
-            transform: scale(1);
+            transform: scale(0.8);
         }
     }
 }
 .img-block2_2 {
-    height: 566px;
+    height:initial;
     width: 100%;
-    background: url(../img/gl3.jpg);
+    background: url(../img/gl3.jpg)left top no-repeat;
     flex: 1 50%;
     background-size: 1000px;
     transition: all 0.3s;
     img {
-        transform: scale(0.7);
+        transform: scale(0.6);
         transition: all 0.3s;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     &:hover {
-        background-size: 835px;
+        background-size: 150%;
         background-position: left top;
         img {
-            transform: scale(1);
+            transform: scale(0.8);
         }
     }
 }
 .img-block3_1 {
-    height: 566px;
-    width: 100%; /*background: url(../img/gl4.jpg)*/
+
+    width: 100%; 
     flex: 1 50%;
     position: relative;
     a {
         position: absolute;
-        left: 67%;
+        right: 179px;
         top: 67px;
     }
     a > img {
         position: absolute;
         width: 165px;
     }
+    .bmb-img3{
+        position: absolute;
+        width: 37%;
+        transform: rotate(45deg);
+        left: 50%;
+        z-index: -1;
+        transition: 0.3s all;
+    }
     &::before {
         content: "";
         position: absolute;
-        width: 200%;
-        height: 200%;
-        top: -1%;
-        left: -2%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
 
         z-index: -1;
         background: url(../img/gl4.jpg) 0 0 repeat;
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        background-size: 850px;
-        -webkit-transition: 0.6s all;
+        background-size: 130%;
         transition: 0.6s all;
     }
     &:hover {
         &::before {
             content: "";
             position: absolute;
-            width: 200%;
-            height: 200%;
-            top: -31%;
-            left: -50%;
+            top: 0;
+            left: 0;
             z-index: -1;
-            background: url(../img/gl4.jpg) 0 0 repeat;
-            transform: rotate(-57deg);
-            background-size: 84%;
+            background: url(../img/gl4.jpg) 100% 100% repeat;
+            background-size: 180%;
+        }
+        .bmb-img3{
+            width: 60%;
+            left:50%;
+            transform:rotate(0deg) translate(-50%,0);
+            z-index: -1;
         }
     }
 }
 .img-block3_2 {
-    height: 566px;
+    height: inherit;
     width: 100%;
     background: url(../img/gl5.jpg);
     flex: 1 50%;
+    position: relative;
+    .bmb-img1{
+        position: relative;
+        z-index: 5;
+    }
+    .bmb-img{
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: scale(0.8) translate(-60%, -31%);
+        z-index: 0;
+        transition: 0.3s all;
+    }
+    &:hover .bmb-img{
+        width: 80%;
+        transform: rotate(-57deg) scale(1) translate(-8%, -54%);
+        z-index: 6; 
+    }
 }
+.bl-2{min-width: 370px;}
 
 .lk-block-all {
     padding: 25px 30px;
@@ -384,3 +413,14 @@ i {font-style: normal;}
 @import "product";
 @import "users";
 @import "media";
+
+
+.tt{
+    .t1{
+        width:50%;
+         background:#333;
+        img{
+            width: 100%;
+        }
+    }
+}
