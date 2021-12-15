@@ -755,13 +755,13 @@ label {
 .chk_ii input[type="checkbox"]:checked + label::before {
   background: url(../img/ico/galka.svg) 2px no-repeat;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   position: relative;
   left: 0px;
   top: 0px;
   font-size: 13px;
-  background-size: 76%;
+  background-size: 82%;
   /* -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 190, 241, 0.787553), 0px 3px 13px 0px rgba(0, 190, 241, 0.787553); */
   /* box-shadow: inset 0px -2px 0px 0px rgba(0, 190, 241, 0.787553), 0px 3px 13px 0px rgba(0, 190, 241, 0.787553); */
   background-color: rgba(255, 255, 255, 0.7);
@@ -772,8 +772,8 @@ label {
   border-radius: 4px;
   display: inline-block;
   margin: 0px 12px 0 0;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   border: 1px solid #e95235;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1361,6 +1361,30 @@ label {
   margin-bottom: 30px;
 }
 
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
 .f-18 {
   font-size: 18px;
   line-height: 26px;
@@ -1473,6 +1497,20 @@ label {
   line-height: 17px;
   color: #858585;
   max-width: 286px;
+}
+
+.small-label-check label {
+  font-size: 10px;
+  line-height: 17px;
+}
+
+.small-label-check label a {
+  display: inline;
+  color: #e95235;
+}
+
+.small-label-check label a:hover {
+  color: inherit;
 }
 
 .prod-head {

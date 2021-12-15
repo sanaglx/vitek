@@ -380,9 +380,13 @@ i {font-style: normal;}
     margin-left: 35px;
     max-width: 295px;
 }
-.mb30 {
-    margin-bottom: 30px;
-}
+.mb30 {margin-bottom: 30px;}
+.mb20 {margin-bottom: 20px;}
+.mb15 {margin-bottom: 15px;}
+.mb10 {margin-bottom: 10px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
 .f-18 {
     font-size: 18px;
     line-height: 26px;
@@ -447,6 +451,17 @@ i {font-style: normal;}
         line-height: 17px;
         color: #858585; 
         max-width: 286px;
+    }
+}
+.small-label-check label{
+    font-size: 10px;
+    line-height: 17px;
+    a{
+        display: inline;
+        color:#e95235;
+        &:hover{
+            color:inherit;
+        }
     }
 }
 
