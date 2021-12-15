@@ -326,7 +326,7 @@ i {font-style: normal;}
     min-width: 370px;
 }
 .lk_block {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     &__title {
         font-size: 12px;
         line-height: 17px;
@@ -341,6 +341,11 @@ i {font-style: normal;}
         font-size: 18px;
         line-height: 26px;
     }
+}
+.bl-line-fl{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .a_kn {
     font-weight: 600;
@@ -387,6 +392,17 @@ i {font-style: normal;}
 .mt10{margin-top: 10px;}
 .mt15{margin-top: 15px;}
 .mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.mt60{margin-top: 60px;}
+.mr25{margin-right: 25px;}
+.block-color-yellow{
+    background: #F0E1CE;
+    border-radius: 8px;
+    padding: 16px 16px 0 16px;
+    width: calc(100% - 270px);
+}
+.bkg-trs{background: transparent;box-shadow: none;}
 .f-18 {
     font-size: 18px;
     line-height: 26px;

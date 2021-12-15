@@ -246,15 +246,19 @@ label {
 /***/
 
 /**checkbox**/
-.chk_ii {
+.chk_ii,
+.radio-x {
     margin-bottom: 16px;
     font-size: 16px;
 }
-.chk_ii input[type="checkbox"] {
+.chk_ii input[type="checkbox"],
+.radio-x input[type="radio"]
+{
     display: none;
 }
 
-.chk_ii input[type="checkbox"] + label {
+.chk_ii input[type="checkbox"] + label,
+.radio-x input[type="radio"] + label {
     position: relative;
     cursor: pointer;
     display: -webkit-box;
@@ -262,6 +266,7 @@ label {
     display: flex;
 }
 
+.radio-x input[type="radio"]:checked + label::before,
 .chk_ii input[type="checkbox"]:checked + label::before {
     background: url(../img/ico/galka.svg) 2px no-repeat;
     content: "";
@@ -277,7 +282,13 @@ label {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.chk_ii input[type="checkbox"] + label::before {
+.radio-x input[type="radio"]:checked + label::before {
+    width: 19px;
+    height:19px;
+    background-size: 77%;
+}
+
+.chk_ii input[type="checkbox"] + label::before{
     content: "";
     border-radius: 4px;
     display: inline-block;
@@ -293,11 +304,29 @@ label {
     background: white;
 }
 
-.chk_ii input[type="checkbox"] + label::after {
+.radio-x input[type="radio"] + label::before {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 12px 0 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #e95235;
+
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background: white;
+}
+
+.chk_ii input[type="checkbox"] + label::after,
+.radio-x input[type="radio"] + label::after {
     font-style: normal;
 }
 
-.chk_ii label i {
+.chk_ii label i ,
+.radio-x label i {
     font-style: normal;
     color: #ff0068;
     font-weight: 600;
