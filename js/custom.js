@@ -281,3 +281,12 @@ $(function ($) {
       $box1.height($box.width()/2 * ratio);
  }) 
 
+ /***radio */
+$(".radio-button input[name='radio']").click(function(){
+    $('.radio-button').removeClass('active');
+    var a= $(this).parent();
+    if ($('input[name="radio"]').is(':checked')){
+        a.addClass('active');
+    }
+})
+

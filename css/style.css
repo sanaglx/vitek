@@ -179,7 +179,7 @@ i {
 }
 
 .left {
-  width: 256px;
+  width: 205px;
   /*min-height: calc(100vh - 75px);*/
   height: auto;
   background: #E95235;
@@ -190,13 +190,13 @@ i {
   line-height: 19px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 33px 0 0 0px;
+  padding: 18px 0 0 0px;
 }
 
 .logo {
   display: block;
-  padding-left: 48px;
-  margin-bottom: 23px;
+  padding-left: 18px;
+  margin-bottom: 18px;
 }
 
 .politika {
@@ -248,7 +248,7 @@ footer a:hover {
           align-items: center;
   line-height: 64px;
   position: relative;
-  padding: 0px 0 0 77px;
+  padding: 0px 0 0 51px;
   margin-left: 0px;
   cursor: pointer;
 }
@@ -258,7 +258,7 @@ footer a:hover {
   background: url(../img/ico/ico30.svg) no-repeat;
   position: absolute;
   top: 17px;
-  left: 27px;
+  left: 15px;
   width: 30px;
   height: 30px;
 }
@@ -283,7 +283,7 @@ footer a:hover {
 .lic-kab.active::before {
   background: url(../img/ico/ico30-1.svg) no-repeat;
   top: 17px;
-  left: 27px;
+  left: 15px;
   width: 30px;
   height: 30px;
 }
@@ -300,8 +300,7 @@ footer a:hover {
   border-radius: 8px;
   right: 16px;
   top: 16px;
-  -webkit-box-shadow: 0 0 15px 14px #f0e1ce;
-          box-shadow: 0 0 15px 14px #f0e1ce;
+  /* box-shadow: 0 0 15px 14px #f0e1ce;*/
   z-index: 20;
 }
 
@@ -315,8 +314,7 @@ footer a:hover {
 
 .mini-cart a:hover {
   opacity: 0.6;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  /* transform: scale(1.2);*/
 }
 
 .mini-cart img {
@@ -346,7 +344,7 @@ footer a:hover {
 
 .menu {
   list-style: none;
-  padding: 3px 0 0 28px;
+  padding: 3px 0 0 15px;
   position: relative;
   z-index: 5;
 }
@@ -361,9 +359,10 @@ footer a:hover {
   color: #FFFFFF;
   display: block;
   text-decoration: none;
-  padding: 21px 0 21px 50px;
+  padding: 19px 0 19px 40px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  font-size: 15px;
 }
 
 .menu > li a:hover, .menu > li a.active {
@@ -373,7 +372,7 @@ footer a:hover {
 .menu > li a::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 13px;
   left: 0px;
   width: 30px;
   height: 30px;
@@ -385,7 +384,7 @@ footer a:hover {
   content: "";
   position: absolute;
   background: url(../img/ico/ugol.png) no-repeat;
-  top: 16px;
+  top: 13px;
   right: 0px;
   width: 11px;
   height: 23px;
@@ -1035,6 +1034,17 @@ label {
 .img-block1 {
   width: 100%;
   background: url(../img/gl1.jpg);
+  background-size: cover;
+}
+
+.bmb-img5 {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.bmb-img5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .img-block2 {
@@ -1387,6 +1397,82 @@ label {
   line-height: 20px;
   text-align: center;
   color: #858585;
+}
+
+/****reg*****/
+.radio-reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #F0E1CE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 240px;
+  text-align: center;
+  margin: 11px 0 15px;
+}
+
+.radio-reg input {
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.radio-reg .rb1.active {
+  background: #e95235;
+  color: #FFF;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.radio-reg .rb2.active {
+  background: #e95235;
+  color: #FFF;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.radio-reg label {
+  padding: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radio-reg .radio-button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+}
+
+.dfl-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.dfl-form .btn {
+  width: 38%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 30px;
+  min-width: 170px;
+}
+
+.dfl-form .conditions {
+  font-size: 10px;
+  line-height: 17px;
+  color: #858585;
+  max-width: 286px;
 }
 
 .prod-head {

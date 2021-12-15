@@ -1,5 +1,5 @@
 .left{
-    width: 256px;
+    width: 205px;
     /*min-height: calc(100vh - 75px);*/
     height: auto;
     background: #E95235;
@@ -10,12 +10,13 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 33px 0 0 0px;
+    padding: 18px 0 0 0px;
 }
 .logo{
     display: block;
-    padding-left: 48px;
-    margin-bottom: 23px;
+    padding-left: 18px;
+    margin-bottom: 18px;
+    img{}
 }
 
 .politika{
@@ -57,14 +58,14 @@ footer{
      align-items: center;
      line-height: 64px;
      position: relative;
-     padding: 0px 0 0 77px;
+     padding: 0px 0 0 51px;
      margin-left: 0px;
      cursor: pointer;
      &::before{
          content: "";
          background: url(../img/ico/ico30.svg) no-repeat;
          position: absolute;
-         top: 17px;left: 27px;
+         top: 17px;left: 15px;
          width: 30px;
          height: 30px;
 
@@ -73,6 +74,9 @@ footer{
          padding:0 22px 0 28px;
          font-size: 0;
          display: flex;
+     }
+     &__ico{
+
      }
 
  }
@@ -84,7 +88,7 @@ footer{
      color: #E95235;
      &::before{
         background: url(../img/ico/ico30-1.svg) no-repeat;
-        top: 17px;left: 27px;
+        top: 17px;left: 15px;
         width: 30px;
         height: 30px;
     }
@@ -103,7 +107,7 @@ footer{
      border-radius: 8px;
      right: 16px;
      top: 16px;
-     box-shadow: 0 0 15px 14px #f0e1ce;
+    /* box-shadow: 0 0 15px 14px #f0e1ce;*/
      z-index: 20;
      a{
         width: 32px;
@@ -112,7 +116,7 @@ footer{
         transition: all 0.3s; 
         &:hover{
             opacity: 0.6;
-            transform: scale(1.2);
+           /* transform: scale(1.2);*/
         }
      }
     img{
@@ -140,7 +144,7 @@ footer{
 
  .menu{
      list-style: none;
-     padding: 3px 0 0 28px;
+     padding: 3px 0 0 15px;
      position: relative;
       z-index: 5;
      &>li{
@@ -151,8 +155,9 @@ footer{
             color: #FFFFFF;
             display: block;
             text-decoration: none;
-            padding: 21px 0 21px 50px;
+            padding: 19px 0 19px 40px;
             transition: 0.3s all;
+            font-size: 15px;
             &:hover,
             &.active{
                 color:#4B284D;
@@ -161,7 +166,7 @@ footer{
                 content: "";
                 position: absolute;
                 //background: url(../img/ico/ico1.svg) no-repeat;
-                top: 16px;left: 0px;
+                top: 13px;left: 0px;
                 width: 30px;
                 height: 30px;
                 transition: 0.3s all;
@@ -171,7 +176,7 @@ footer{
                 content: "";
                 position: absolute;
                 background: url(../img/ico/ugol.png) no-repeat;
-                top: 16px;
+                top: 13px;
                 right: 0px;
                 width: 11px;
                 height: 23px;
