@@ -56,6 +56,10 @@ h3 {
   padding: 45px 30px 45px 30px;
 }
 
+.wrap-page-1 {
+  padding: 0px 30px 45px 35px;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;
@@ -1387,12 +1391,20 @@ label {
 }
 
 .feedback-block .feedback-notation_text {
-  max-width: 375px;
+  max-width: 480px;
 }
 
 .text-left-2 {
   margin-left: 35px;
   max-width: 295px;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.mrl30 {
+  margin-right: 30px;
 }
 
 .mb30 {
@@ -1578,6 +1590,28 @@ label {
 
 .small-label-check label a:hover {
   color: inherit;
+}
+
+.my-socseti {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.my-socseti .my-socseti__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-socseti .my-socseti__item .text {
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 .prod-head {
@@ -2828,6 +2862,18 @@ ul.product-propities li i {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .mrl30 {
+    margin-right: 0px;
+  }
+  .wrap-page-1 {
+    padding: 0px 15px 45px 15px;
+  }
+  .wrap-page-1 .lk-block-all {
+    padding: 0;
   }
 }
 

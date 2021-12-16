@@ -103,6 +103,16 @@
     }
 }
 
+@media(max-width:600px){
+.mrl30{margin-right: 0px;}
+.wrap-page-1{
+    padding: 0px 15px 45px 15px;
+    .lk-block-all{
+        padding: 0;
+    }
+}
+}
+
 @media(max-width:568px){
     .right.right-bkg::after {
         content: "";background: none;

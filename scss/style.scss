@@ -48,6 +48,7 @@ h3 {
 .mw-700 {max-width: 700px;}
 .miw240 {min-width: 240px;}
 .wrap-page {padding: 45px 30px 45px 30px;}
+.wrap-page-1 {padding: 0px 30px 45px 35px;}
 * {outline: none;box-sizing: border-box;}
 a {
     text-decoration: none;
@@ -378,13 +379,16 @@ i {font-style: normal;}
         justify-content: center;
     }
     .feedback-notation_text {
-        max-width: 375px;
+        max-width: 480px;
     }
 }
 .text-left-2 {
     margin-left: 35px;
     max-width: 295px;
 }
+.p0{padding: 0;}
+.mrl30{margin-right: 30px;}
+
 .mb30 {margin-bottom: 30px;}
 .mb20 {margin-bottom: 20px;}
 .mb15 {margin-bottom: 15px;}
@@ -477,6 +481,19 @@ i {font-style: normal;}
         color:#e95235;
         &:hover{
             color:inherit;
+        }
+    }
+}
+.my-socseti{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+    .my-socseti__item{
+        display: flex;
+        align-items: center;
+        .text{
+            margin-left: 20px;
+            font-size: 16px;
         }
     }
 }
