@@ -498,6 +498,37 @@ i {font-style: normal;}
     }
 }
 
+.news {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    width:calc(100% - 17%);
+}
+.news-el {
+        margin-bottom: 20px; 
+		&__img {
+            margin-bottom: 25px;
+            img{
+                width: 100%;
+            }
+        }
+
+		&__data {
+            font-size: 16px;
+            line-height: 23px;
+            color: #4B284D;
+            opacity: 0.5;
+            margin-bottom: 16px;
+        }
+
+		&__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+}
+
+
+
 @import "product";
 @import "users";
 @import "media";

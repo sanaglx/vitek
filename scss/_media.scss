@@ -11,6 +11,12 @@
     .block-color-yellow{
         width: auto;
     }
+
+    .news {
+        gap: 32px;
+        grid-template-columns: 1fr 1fr   ;
+        width:calc(100% - 17% );
+    }
     
 }
 
@@ -84,6 +90,9 @@
             i{padding-left: 30px;}
         }
     }
+    .news {
+        width:100% ;
+    }
 }
 
 @media(max-width:768px){
@@ -119,6 +128,13 @@
     }
     h1{font-size: 26px;}
     h2{font-size: 24px;    line-height: 1.2;}
+}
+
+@media(max-width:470px){
+    .news {
+        gap: 15px;
+        grid-template-columns: 1fr    ;
+    }
 }
 
 @media(max-width:383px){
