@@ -526,6 +526,56 @@ i {font-style: normal;}
             line-height: 26px;
         }
 }
+.mr40{margin-right: 40px;}
+.lk2{
+    width: calc(100% - 10% );
+    background: #F0E1CE;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    .lk2-h-bl{
+        display: flex;
+    }
+
+}
+.lk2-bl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    &_q{
+      margin-right: 32px;   
+    }
+    &_q,
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        min-width: 15%; 
+        text-align: right;  
+    }
+
+    &__img {
+        margin-right: 32px;
+        img{height: 49px;}
+    }
+
+    &__titl {
+        flex: 1;
+        &_lg {
+            margin-bottom: 5px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &_m {font-size: 12px;
+            line-height: 17px;}
+    }
+}
+
 
 
 
