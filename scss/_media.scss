@@ -112,6 +112,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .news_p h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
 }
 
 @media(max-width:600px){
@@ -136,6 +140,10 @@
     .lk2-h-bl .lk_block{margin-bottom: 12px;}
     .lk2-h-bl .lk_block__title{margin-bottom: 0;}
     .lk2-h-bl .lk_block .fz-18 {font-size: 16px;line-height: 20px;}
+    .news_p h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
 }
 
 @media(max-width:470px){

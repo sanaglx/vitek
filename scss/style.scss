@@ -526,6 +526,22 @@ i {font-style: normal;}
             line-height: 26px;
         }
 }
+.news_p{
+    max-width: 800px;
+    margin-bottom: 79px;
+    h1{font-size: 32px;line-height: 44px;}
+    .data{opacity: .5;margin-bottom: 30px;}
+    .img-news-p{
+        margin-bottom: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+    p{
+        line-height: 26px;
+    };
+}
+
 .mr40{margin-right: 40px;}
 .lk2{
     width: calc(100% - 10% );

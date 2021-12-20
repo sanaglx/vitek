@@ -57,17 +57,237 @@
             </nav>
 
         </div>
-        <!-- <div class="right right-bkg"> -->
-        <div class="right">
+        <!-- <div class="right "> -->
+        <div class="right right-bkg">
             <div class="wrap-page-1">
                 <div class="breadcrumbs mt60">
                     <a href="/"><i><img src="img/ico/strl.svg"></i>В корзину</a>
                 </div>
                 <h1>Оформление заказа</h1>
+                <div class="oder">
+                    <div class="oder-block mb30">
+                        <div class="registracia-vhod">
+                            <div class="h3 mr15"><label for="">Тип покупателя</label></div>
+                            <div class="radio-reg">
+                                <div class="radio-button rb1">
+                                    <label for="i1">ИП</label>
+                                    <input id="i1" name="radio" type="radio" value="1">
+                                </div>
+                                <div class="radio-button rb2 active">
+                                    <label for="i2">Юр. лицо</label>
+                                    <input id="i2" name="radio" type="radio" checked="checked" value="2">
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>Тип покупателя</b></p>
+                        <div class="mesto">
+                            <a href="#" class="btn btn-smal">Москва</a>
+                            <a href="#" class="btn btn-smal">Екатеринбург</a>
+                            <a href="#" class="btn btn-smal">Санкт-Петербург</a>
+                        </div>
 
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">Адрес</label>
+                                <input type="text" placeholder="Начните вводить адрес">
+                            </div>
+                        </div>
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">Индекс</label>
+                                <input type="text" placeholder="Начните вводить адрес">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oder-blocks-2 mb30">
+                        <div class="oder-block p30">
+                            <div class="h3 mb16">Способ доставки</div>
+                            <div class="radio-x order-radio">
+                                <input type="radio" checked="checked" id="ipf-1" name="radio" value="Yes">
+                                <label for="ipf-1">
+                                    <span>
+                                        <span class="order-radio__title">Доставка курьером</span>
+                                        <span class="small">Стоимость доставки:<b>500 руб.</b></span>
+                                        <span class="small">Доставка осуществляется в течении дня в удобное для вас
+                                            время</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="radio-x order-radio">
+                                <input type="radio" id="ipf-2" name="radio" value="Yes">
+                                <label for="ipf-2">
+                                    <span>
+                                        <span class="order-radio__title">Доставка курьером</span>
+                                        <span class="small">Стоимость доставки:<b>500 руб.</b></span>
+                                        <span class="small">Доставка осуществляется в течении дня в удобное для вас
+                                            время</span>
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="oder-block p30">
+                            <div class="h3 mb16">Способ оплаты</div>
+
+                            <div class="radio-x order-radio">
+                                <input type="radio" id="ipf--1" name="radio2" value="Yes">
+                                <label for="ipf--1">
+                                    <span class="order-radio__title">Яндекс деньги</span>
+                                </label>
+                            </div>
+                            <div class="radio-x order-radio">
+                                <input type="radio" id="ipf--2" name="radio2" value="Yes">
+                                <label for="ipf--2">
+                                    <span class="order-radio__title">Яндекс деньги</span>
+                                </label>
+                            </div>
+                            <div class="radio-x order-radio">
+                                <input type="radio" id="ipf--3" name="radio2" value="Yes">
+                                <label for="ipf--3">
+                                    <span class="order-radio__title">Яндекс деньги</span>
+                                </label>
+                            </div>
+                            <div class="radio-x order-radio">
+                                <input type="radio" id="ipf--4" name="radio2" value="Yes">
+                                <label for="ipf--4">
+                                    <span class="order-radio__title">Яндекс деньги</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cart-h mb30">
+                        <form action="">
+                            <small for="">Введите код купона для скидки:</small>
+                            <div class="fl-btn-line">
+                                <input type="text" placeholder="Введите">
+                                <a class="form-a" href=""><img src="img/ico/str-l.svg" alt=""></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="oder-block mb30">
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">ФИО</label>
+                                <input type="text" placeholder="ввeдитe">
+                            </div>
+                        </div>
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">E-mail</label>
+                                <input type="text" placeholder="введите">
+                            </div>
+                        </div>
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">Телефон</label>
+                                <input type="text" placeholder="введите">
+                            </div>
+                        </div>
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">Адрес доставки</label>
+                                <input type="text" placeholder="введите">
+                            </div>
+                        </div>
+                        <div class="form-reg-group">
+                            <div class="form-reg-item">
+                                <label for="">Комментарии к заказу</label>
+                                <input type="text" placeholder="введите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart2-podrobno">
+                        <div class="h3">
+                            Товары в заказе
+                        </div>
+                        <div class="border-cart2-item">
+                            <table class="order-table">
+                                <tr class="ml57">
+                                    <th class="t-left">Наименование</th>
+                                    <th>Скидка</th>
+                                    <th>Цена</th>
+                                    <th>Вес</th>
+                                    <th>Количество</th>
+                                    <th>Сумма</th>
+                                </tr>
+                                <tr class="td57">
+
+                                    <td class="t-left dfl-form">
+                                        <span class="ml5">Наименование</span>
+                                        <div class="ober">
+                                            <div class="catr-item__img"><img src="img/product/4.png" alt=""></div>
+                                            <div class="catr-item__text">
+                                                <div class="catr-item__text_title">Кукурузные палочки "Витек" </div>
+                                                <div class="catr-item__text_kod">Штрих-код 0056998856</div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                    <td class="ws-n"><span class="ml5">Скидка</span> 0%</td>
+                                    <td class="ws-n"><span class="ml5">Цена</span> 1 586 р.</td>
+                                    <td class="ws-n"><span class="ml5">Вес</span> 4 кг</td>
+                                    <td class="ws-n"><span class="ml5">Количество</span> 10 шт</td>
+                                    <td class="ws-n"><span class="ml5">Сумма</span> 10 586 р.</td>
+                                </tr>
+                                <tr class="td57">
+
+                                    <td class="t-left dfl-form">
+                                        <span class="ml5">Наименование</span>
+                                        <div class="ober">
+                                            <div class="catr-item__img"><img src="img/product/4.png" alt=""></div>
+                                            <div class="catr-item__text">
+                                                <div class="catr-item__text_title">Кукурузные палочки "Витек" </div>
+                                                <div class="catr-item__text_kod">Штрих-код 0056998856</div>
+                                            </div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="ws-n"><span class="ml5">Скидка</span> 0%</td>
+                                    <td class="ws-n"><span class="ml5">Цена</span> 1 586 р.</td>
+                                    <td class="ws-n"><span class="ml5">Вес</span> 4 кг</td>
+                                    <td class="ws-n"><span class="ml5">Количество</span> 10 шт</td>
+                                    <td class="ws-n"><span class="ml5">Сумма</span> 10 586 р.</td>
+                                </tr>
+                                <tr class="td57">
+
+                                    <td class="t-left dfl-form">
+                                        <span class="ml5">Наименование</span>
+                                        <div class="ober">
+                                            <div class="catr-item__img"><img src="img/product/4.png" alt=""></div>
+                                            <div class="catr-item__text">
+                                                <div class="catr-item__text_title">Кукурузные палочки "Витек" </div>
+                                                <div class="catr-item__text_kod">Штрих-код 0056998856</div>
+                                            </div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="ws-n"><span class="ml5">Скидка</span> 0%</td>
+                                    <td class="ws-n"><span class="ml5">Цена</span> 1 586 р.</td>
+                                    <td class="ws-n"><span class="ml5">Вес</span> 4 кг</td>
+                                    <td class="ws-n"><span class="ml5">Количество</span> 10 шт</td>
+                                    <td class="ws-n"><span class="ml5">Сумма</span> 10 586 р.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="order-footer">
+                        <div class="small order-footer__left">Минимальная сумма заказа – 10 000 руб</div>
+                        <div class="small">Итого</div>
+                        <div class="order-price">20 586 <span>р.</span></div>
+                        <a href="" class="btn btn-main">Оформить заказ</a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <style>
+        /* tbody{display: flex;}
+        td,th{display: block;padding: 16px;}*/
+    </style>
     <footer>
         <div class="footer-c">© 2021. Витек. Кондитерская фабрика</div>
         <a href="#" class="politika">Политика конфиденциальности</a>
