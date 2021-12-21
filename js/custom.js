@@ -262,11 +262,28 @@ $(function ($) {
 	});
   })
 
+  $(function ($) {
+	$(".gls").owlCarousel({
+		//center:true,
+		//stagePadding:80,
+		//loop:true,
+		items:1,
+        //autoWidth:true,
+		//autoplay: false,
+		dots: false,
+		nav: true,
+        margin:15,
+		navText: ["<i class='news-str-left' aria-hidden='true'><img src='img/ico/left.svg'></i>", 
+				"<i class='news-str-right' aria-hidden='true'><img src='img/ico/left.svg'></i>"],
 
-  var ratio = 1/2.5; // высота равна половине ширины
-  if($(window).width()<992){var ratio = 1/1.5;}
-  if($(window).width()>992){var ratio = 1/2.5;}
-  if($(window).width()>1300){var ratio = 1/3.2;}
+	});
+  })
+
+
+  var ratio = 1/1.5; // высота равна половине ширины
+  if($(window).width()<992){var ratio = 1/1.3;}
+  if($(window).width()>992){var ratio = 1/1.5;}
+  if($(window).width()>1300){var ratio = 1/1.5;}
   var $box = $('.bl-2'); // кэшируем результат вызова функции
   var $box1=$('.bmb-img5'); 
 
@@ -274,8 +291,8 @@ $(function ($) {
     $box1.height($box.width()/2 * ratio);
 
  $(window).resize(function () {
-     if($(window).width()>992){var ratio = 1/2.5;}
-     if($(window).width()>1300){var ratio = 1/3;}
+     if($(window).width()>992){var ratio = 1/1.3;}
+     if($(window).width()>1300){var ratio = 1/1.5;}
       if($(window).width()<992){var ratio = 1/1.5;}
       $box.height($box.width() * ratio);
       $box1.height($box.width()/2 * ratio);
