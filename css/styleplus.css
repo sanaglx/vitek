@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .product-block__quantity {
   max-width: 178px;
 }
@@ -390,6 +391,78 @@
           transform: rotate(180deg);
 }
 
+.owl-onas {
+  max-width: 600px;
+}
+
+.owl-onas .owl-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.owl-onas .owl-dot {
+  height: 14px;
+  border-radius: 50%;
+  background: #fff !important;
+  margin: 6px 7px;
+}
+
+.owl-onas .owl-dot span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  z-index: 100000;
+  top: 14px;
+  margin-left: -4px;
+}
+
+.owl-onas .owl-dot.active span {
+  background: #E95235;
+}
+
+.page {
+  max-width: 639px;
+}
+
+.lk_block_smal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lk_block_smal .lk_block {
+  margin-right: 50px;
+}
+
+.lk_block_smal .lk_block ~ .lk_block {
+  margin-right: 0;
+}
+
+.lk_block_smal .lk_block__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+.my-socseti {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 1fr 1fr 3fr;
+      grid-template-columns: 1fr 1fr 3fr;
+}
+
+@media screen and (max-height: 800px) {
+  .form-reg-group .form-reg-item {
+    max-height: 59px;
+  }
+}
+
 @media (max-width: 1340px) {
   .cart-block {
     width: calc(100% - 12%);
@@ -430,6 +503,13 @@
   }
   .fl-btn-line {
     margin-right: -18px;
+  }
+  .my-socseti {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -504,6 +584,7 @@
   }
 }
 
+/***********29.12.2021 правки по карте user3.html***********************/
 @media (max-width: 600px) {
   .img-block1-h, .img-block-center {
     height: 300px;
@@ -514,6 +595,13 @@
   .oder-blocks-2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .my-socseti {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -556,5 +644,8 @@
   }
   .catr-item__text {
     margin-bottom: 16px;
+  }
+  .lk_block_smal .lk_block {
+    margin-right: 30px;
   }
 }

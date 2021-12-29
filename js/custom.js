@@ -277,6 +277,20 @@ $(function ($) {
 				"<i class='news-str-right' aria-hidden='true'><img src='img/ico/left.svg'></i>"],
 
 	});
+    $(".owl-onas").owlCarousel({
+		center:true,
+		//stagePadding:80,
+		//loop:true,
+		items:1,
+        //autoWidth:true,
+		//autoplay: false,
+		dots: true,
+		nav: false,
+        margin:15,
+		navText: ["<i class='news-str-left' aria-hidden='true'><img src='img/ico/left.svg'></i>", 
+				"<i class='news-str-right' aria-hidden='true'><img src='img/ico/left.svg'></i>"],
+
+	});
   })
 
 
