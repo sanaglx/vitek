@@ -240,11 +240,40 @@
 }
 
 .my-socseti {display: grid;gap: 20px;grid-template-columns: 1fr 1fr 3fr;}
+.shared-right .fotm-right {   margin-bottom: 30px;}
+
 @media screen and(max-height: 800px){
     .form-reg-group .form-reg-item{
-       max-height: 59px;
+     //  max-height: 59px;
    } 
 }
+
+
+/***********29.12.2021 правки по карте user3.html***********************/
+.fl1{flex:1;}
+.geo-prod .img-map {
+    margin-bottom: 85px;
+}
+.page.no639{
+    max-width: 100%;
+}
+.geo-prod{
+    .page-contacts{
+       .two-contacts{
+        .contact{min-width: 310px;}   
+        .contact-text{
+                font-size: 16px;
+                line-height: 23px;
+                font-weight: 400;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }  
+    }
+}
+
+
+
 @media(max-width:1340px){
     .cart-block {width: calc(100% - 12%);}
 }
@@ -297,7 +326,6 @@
 
 }
 
-/***********29.12.2021 правки по карте user3.html***********************/
 
 
 @media(max-width:600px){
