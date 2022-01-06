@@ -270,10 +270,86 @@
     }
 }
 
+/***********правки от 06,12****************************/
+.order-table .ws-n {
+    white-space: nowrap;
+    padding: 0 10px;
+    text-align: right;
+}
+.close-b {
+    width: 16px;
+    margin: 0 15px 0 26px;
+}
+.catr-item .plusminus .quantity input.plus, .catr-item .plusminus .quantity input.minus {
+    width: 24px;
+}
+.catr-item .plusminus .quantity {
+    min-width: 150px;
+}
+.catr-item__price {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 33px;
+    min-width: 117px;
+    text-align: right;
+    letter-spacing: -1px;
+}
+.plusminus .quantity input {
+    display: inline-block;
+    width: 72px;
+    height: 33px;
+    /* padding: 0; */
+    margin: 0;
+    text-align: center;
+    border-right: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E95235;
+    letter-spacing: -1px;
+}
 
+.brend-elem,
+.prod-elem {
+    flex: 0 33.333%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #F0E1CE;
+    border-bottom: 1px solid #F0E1CE;
+    padding: 0 30px 0;
+   height:100%;
+    /* max-width: 464px; */
+    min-width: 320px;
+    max-width: initial;
+}
+
+.brend-elem_img,
+.prod-elem_img{
+    margin: 0;
+    padding: 0 0 104% 0;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit:cover;
+        position: absolute;
+        top: 10%;left: 10%;
+
+    }
+}
+
+
+/*********************************************/
+@media(max-width:1440px){
+    .brend-elem,
+    .prod-elem {flex: 0 50%;}
+}
 
 @media(max-width:1340px){
     .cart-block {width: calc(100% - 12%);}
+    
 }
 
 @media(max-width:1200px){
@@ -292,6 +368,8 @@
 }
 
 @media(max-width:992px){
+    .catr-item__price {text-align: left;}
+    .cart-item-bl2 {width: 100%;}
     .catr-item{flex-wrap: wrap;}
     .catr-item__text {
         flex:1 60%;
@@ -321,6 +399,7 @@
             font-size: 14px;
         }
     }
+    .brend-elem, .prod-elem  {min-width: 270px;}
 
 }
 
@@ -337,7 +416,7 @@
         grid-template-columns: 1fr;
     }
     .my-socseti {display: grid;gap: 20px;grid-template-columns: 1fr 1fr ;}
-
+    .brend-elem, .prod-elem  {flex: 0 100%;}
 }
 @media(max-width:520px){
     .cart-h-r__price {
@@ -350,7 +429,7 @@
     .cart-h-r{ display: grid;grid-template-columns: 1fr 1fr;gap: 16px;}
     .cart-h-r a{margin: 16px 0 0;}
     .tarmm {text-align: left;margin-top: 16px;}
-    .catr-item__price {flex: 1 30%;}
+    .catr-item__price {flex: 1 50%;}
     .cart-item-bl2{flex-wrap: wrap;}
     .product-block__quantity {margin: 0 0px;}
     .catr-item__text {
@@ -358,5 +437,15 @@
     }
     .lk_block_smal .lk_block {
         margin-right: 30px;
+    }
+}
+
+@media(max-width:440px){
+    .brend-elem {flex: 0 100%;}
+}
+
+@media(max-width:370px){
+    .catr-item__price {
+        margin-bottom: 15px;
     }
 }
